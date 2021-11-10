@@ -21,41 +21,20 @@
 </head>
 <body>
     <h1>Websockets basics</h1>
-    <div id="log"> </div>
-    <div id="sendCtrls">
-    <input type="text" placeholder="Your message here " id="text">
-    <button>Send hello</button>
-    </div>
-    
+    <textarea id="text"></textarea>
     <script>
-        // const ws =  new WebSocket("ws://localhost:8082");
-
-        // ws.addEventListener("open" , ()=> { 
-        //     console.log("we are connected");
-
-        // ws.send("hi , Prakhar this side , Meow!!")
-        // })
-
-        // ws.addEventListener("message" , e => {
-        //     console.log(e);
-        // });
-        
+    
         var sock = new WebSocket("ws://localhost:8082");
-        var log = document.getElementById("log");
-        // sock.onopen = function(event) {
-        //     alert('socket connected!');
-        //     setTimeout(function() {
-        //         sock.send("hey there");
-        //     }, 1000);
-        // };
+        var log = document.getElementById("text");
+        
         sock.onmessage = function(event) {
             console.log(event);
-            log.innerHTML +=event.data+"<br>";
+            log.innerHTML = event.data;
         }
-        document.querySelector('button').onclick = function() {
+        document.querySelector('#text').onkeypress = function() {
             var text = document.getElementById('text').value;
             sock.send(text);
-            log.innerHTML += "You: "+text+"<br>";
+            log.innerHTML = event.data;
         }
     </script>
 </body>
