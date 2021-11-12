@@ -6,35 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebSockets</title>
     <style>
-        div#log {
-            width: 800px;
-            height: 300px;
-            margin: 0 auto;
-            border: 5px solid black;
-            border-radius: 7px;
-        }
-        div#sendCtrls {
-            width: 230px;
-            margin: 30px auto;
-        }
+    
+        
     </style>
 </head>
 <body>
     <h1>Websockets basics</h1>
     <textarea id="text"></textarea>
     <script>
-    
         var sock = new WebSocket("ws://localhost:8082");
         var log = document.getElementById("text");
         
         sock.onmessage = function(event) {
-            console.log(event);
-            log.innerHTML = event.data;
+            if (event.data instanceof Blob) {
+                reader = new FileReader();
+
+                reader.onload = () => {
+                    log.value = reader.result;
+                };
+
+                reader.readAsText(event.data);
+            } else {
+                log.value = event.data;
+            }
         }
         document.querySelector('#text').onkeyup = function() {
             var text = document.getElementById('text').value;
             sock.send(text);
-            log.innerHTML = event.data;
+            log.value = text;
         }
     </script>
 </body>
