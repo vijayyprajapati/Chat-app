@@ -31,7 +31,7 @@
             console.log(event);
             log.innerHTML = event.data;
         }
-        document.querySelector('#text').onkeypress = function() {
+        document.querySelector('#text').onkeyup = function() {
             var text = document.getElementById('text').value;
             sock.send(text);
             log.innerHTML = event.data;
