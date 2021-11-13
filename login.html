@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <label class="logo">Live Code</label>
+    </nav>
+    <div class="container">
+      <h1 class="title">Log in to access your saved code</h1>
+      <div class="login-form-container">
+        <form class="full-width">
+          <div class="form-field">
+            <label for="email">Email address</label
+            ><input
+              name="email"
+              id="email"
+              type="email"
+              label="Email address"
+              required=""
+              value=""
+            />
+          </div>
+          <div class="form-field">
+            <label for="password">Password</label
+            ><input
+              name="password"
+              id="password"
+              type="password"
+              label="Password"
+              required=""
+              value=""
+            />
+          </div>
+          <span class="text-success" style="display: none"></span
+          ><span id="error" style="display: none">Error: </span
+          ><button class="btn btn-primary" type="submit" label="Log in">
+            Log in
+          </button>
+        </form>
+        <p class="aligncenter">
+          New to Codeshare? <a href="singup.html">Sign up here</a>.
+        </p>
+        <p class="aligncenter">
+          <a href="/forgot-password?email=">Forgot your password?</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
