@@ -50,8 +50,17 @@ main {
   margin: 0;
   padding: 0;
 }
+textarea{
+  background: url(./2cOaJ.png);
+  background-size: 3%;
+background-attachment: local;
+background-repeat: no-repeat;
+padding-left: 50px;
+padding-top: 20px;
+  border-color:#ccc;
+}
 #text {
-  min-height: 92.6vh;
+  min-height: 93vh;
   min-width: 100vw;
   background-color: rgb(43, 39, 39);
   color: white;
@@ -106,3 +115,6 @@ input:focus {
   display: flex;
   justify-content: center;
 }
+
+
+
