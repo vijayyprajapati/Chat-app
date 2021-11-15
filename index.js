@@ -1,7 +1,7 @@
 const WebSocket = require('ws');
 require('dotenv').config({path:'./dev.env'})
 
-const PORT=process.env.PORT
+const PORT=process.env.PORT||5000
 const wss = new WebSocket.Server( { port: PORT });
 
 

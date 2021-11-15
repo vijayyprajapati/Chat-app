@@ -43,7 +43,7 @@
     </main>
 
     <script>
-      var sock = new WebSocket("ws://localhost:8082");
+      var sock = new WebSocket("ws://codealog.herokuapp.com/");
       var log = document.getElementById("text");
 
       sock.onmessage = function (event) {
