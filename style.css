@@ -4,7 +4,7 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Montserrat;
 }
 body {
   overflow: hidden;
@@ -13,6 +13,7 @@ body {
 nav {
   background-color: rgb(45, 45, 58);
   margin-bottom: 0;
+  font-family: montserrat !important;
 }
 
 label.logo {
@@ -20,6 +21,7 @@ label.logo {
   font-size: 35px;
   line-height: 65px;
   margin-left: 50px;
+  margin-top: 30px;
 }
 .logo a {
   color: white;
@@ -60,7 +62,7 @@ main {
 #text {
   min-height: 92vh;
   width: 99%;
-  background-color: rgb(43, 39, 39);
+  background-color:#343333;
   color: white;
   font-size: 20px;
 }
