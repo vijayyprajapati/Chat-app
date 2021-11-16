@@ -59,7 +59,7 @@ main {
 }
 #text {
   min-height: 92vh;
-  width: 99%;
+  min-width: 96.7%;
   background-color: rgb(43, 39, 39);
   color: white;
   font-size: 20px;
@@ -139,16 +139,39 @@ main {
   margin-left: 5px;
 }
 
-.material-icons:hover {
-  cursor: pointer;
-}
 .sidebar-container img {
   margin-top: 30px;
   margin-left: 10px;
 }
 .sidebar-container img:hover {
   cursor: pointer;
+  background-color: #5894ec;
+  border-radius: 50px;
 }
 button.btn-primary a {
   color: white;
+}
+
+.material-icons:hover {
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #5894ec;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(3, 1, 12, 0.377);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
 }
