@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Along</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/39545e5ba2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -31,15 +39,52 @@
       <div class="sidebar-container">
         <div class="sidebar">
           <div class="sidebar-options">
-            <i class="material-icons" style="font-size: 40px">note_add</i>
-            <i class="material-icons" style="font-size: 40px">videocam</i>
-            <i class="material-icons" style="font-size: 40px">file_download</i>
-            <img src="./asset/GithubFinal.png" width="30px" alt="" />
-            <i class="material-icons" style="font-size: 40px">person</i>
+            <i title="Add File" class="material-icons" style="font-size: 40px"
+              >note_add</i
+            >
+            <i title="Vide Call" class="material-icons" style="font-size: 40px"
+              >videocam</i
+            >
+            <i title="Download" class="material-icons" style="font-size: 40px"
+              >file_download</i
+            >
+            <img
+              title="GitHub"
+              src="./asset/GithubFinal.png"
+              width="30px"
+              alt=""
+            />
+            <i title="Account" class="material-icons" style="font-size: 40px"
+              >person</i
+            >
+           <i
+              title="Scroll Top"
+              class="material-icons scroll-top "
+              style="font-size: 40px"
+              >arrow_circle_up</i
+            >
           </div>
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <div class="footer-icons">
+        <div class="left-icons"></div>
+          <i title="Settings" class="material-icons bottom" style="font-size: 30px"
+          >settings</i>
+
+        </div>
+        <div class="right-icons">
+          <i title="Error" class="material-icons" style="font-size: 25px"
+              >report_problem</i
+            >
+            <span>0</span>
+        </div>
+      
+    </div>
+    </div>
+    </footer>
+    <script src="./function.js"></script>
 
     <script>
       var sock = new WebSocket("ws://localhost:8082");
@@ -64,5 +109,6 @@
         log.value = text;
       };
     </script>
+    <script src="./function.js"></script>
   </body>
 </html>

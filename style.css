@@ -4,7 +4,7 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 body {
   overflow: hidden;
@@ -13,6 +13,7 @@ body {
 nav {
   background-color: rgb(45, 45, 58);
   margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 label.logo {
@@ -20,6 +21,7 @@ label.logo {
   font-size: 35px;
   line-height: 65px;
   margin-left: 50px;
+  margin-top: 30px;
 }
 .logo a {
   color: white;
@@ -58,9 +60,13 @@ main {
   padding: 0;
 }
 #text {
-  min-height: 92vh;
+  min-height: 85vh;
   min-width: 96.7%;
   background-color: rgb(43, 39, 39);
+
+  /* width: 99%;
+  background-color:#343333; */
+
   color: white;
   font-size: 20px;
 }
@@ -132,7 +138,7 @@ main {
   justify-content: center;
 }
 
-.material-icons {
+main .material-icons {
   color: white;
   font-size: 100px;
   margin-top: 30px;
@@ -148,6 +154,10 @@ main {
   background-color: #5894ec;
   border-radius: 50px;
 }
+
+i.scroll-top {
+  margin-top: 200px;
+}
 button.btn-primary a {
   color: white;
 }
@@ -159,7 +169,7 @@ button.btn-primary a {
 }
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {
@@ -168,10 +178,43 @@ button.btn-primary a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(3, 1, 12, 0.377);
+  background: #5e5c5c;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
+  background: #fffefe;
+}
+
+footer {
+  height: 60px;
+  background-color: #19b687;
+  display: flex;
+  justify-content: space-between;
+}
+footer .material-icons {
+  color: white;
+  margin-top: 7px;
+  margin-left: 20px;
+  margin-right: 2px;
+}
+
+footer .material-icons:hover {
+  background-color: #74d8ba;
+  border-radius: 50%;
+}
+footer .right-icons {
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+  padding: 0;
+  height: 35px;
+}
+footer .right-icons:hover {
+  background-color: #19b687;
+}
+footer .right-icons span {
+  font-size: 20px;
+  color: white;
+  margin-top: 10px;
 }
